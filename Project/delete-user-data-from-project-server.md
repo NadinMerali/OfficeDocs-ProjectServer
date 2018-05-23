@@ -32,7 +32,7 @@ Learn how an Farm admin can delete a specific user's data from a Project Server 
     
 > [Step 8 - Delete the user's personal information from the Resource and Project Resources tables](delete-user-data-from-project-server.md#step5)
     
-> [Step 9 - Clear the cache for Project Professional users connecting to the Project Online instance.](delete-user-data-from-project-server.md#step6)
+> [Step 9 - Clear the cache for Project Professional users connecting to the Project Server instance.](delete-user-data-from-project-server.md#step6)
     
 > [!NOTE]
 > Issues and Risks are stored in Project Sites, which are part of SharePoint Server. When deleting user information, the best practice is to delete the user's SharePoint Server information first, followed by deleting their Project Server information. 
@@ -320,7 +320,7 @@ DECLARE @update_timesheet_names bit = 1
 
 The script removes all Adam Barr's personal data and changes his display name to "Deleted User" throughout the https://contoso.sharepoint.com/sites/pwa site.
   
-#### Example script configuration of Scenario 3: Delete user's information from a Project Online instance, but change the display name everywhere except for timesheet records
+#### Example script configuration of Scenario 3: Delete user's information from a Project Server instance, but change the display name everywhere except for timesheet records
 
 This scenario removes the personal data of a user from the Project Web App instance, and changes the user's display name to what you choose (for example, "Deleted User"), except where it appears in timesheet records.
   
@@ -439,7 +439,7 @@ DECLARE @update_timesheet_names bit = 1
 
 The script removes all Adam Barr's personal data and changes his display name to "Deleted User" throughout the https://contoso.sharepoint.com/sites/pwa site.
   
-#### Example script configuration of Scenario 3: Delete user's information from a Project Online instance, but change the display name everywhere except for timesheet records
+#### Example script configuration of Scenario 3: Delete user's information from a Project Server instance, but change the display name everywhere except for timesheet records
 
 This scenario removes the personal data of a user from the Project Web App instance, and changes the user's display name to what you choose (for example, "Deleted User"), except where it appears in timesheet records.
   
@@ -520,7 +520,7 @@ DECLARE @timesheet_new_res_uid uniqueidentifier = NULL
 
 The script removes all Adam Barr's personal data and changes his display name to "Deleted User" throughout the https://contoso.sharepoint.com/sites/pwa site.
   
-#### Example script configuration of Scenario 3: Delete user's information from a Project Online instance, but change the display name everywhere except for timesheet records
+#### Example script configuration of Scenario 3: Delete user's information from a Project Server instance, but change the display name everywhere except for timesheet records
 
 This scenario removes the personal data of a user from the Project Web App instance, and changes the user's display name to what you choose (for example, "Deleted User"), except where it appears in timesheet records.
   
@@ -538,7 +538,7 @@ DECLARE @timesheet_new_res_uid uniqueidentifier = 'delete-user-data-from-project
 
 The script removes all Adam Barr's personal data from the https://contoso.sharepoint.com/sites/pwa site and changes his display name to "Deleted User" except in timesheet records. The new Resource ID is added to the timesheet records to unlink them from the records associated with "Deleted Uer."
   
-## Step 9 - Clear the cache for Project Professional users connecting to the Project Online instance.
+## Step 9 - Clear the cache for Project Professional users connecting to the Project Server instance.
 <a name="step6"> </a>
 
 On all devices on which Project Professional or the Project Online Desktop Client connected to Project Web App, you need to clear the cache. Clearing the cache will prevent projects in which user information was deleted from being updated from cached data that remains on the system.
